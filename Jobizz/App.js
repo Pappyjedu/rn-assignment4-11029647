@@ -55,9 +55,8 @@ const HomeScreen = ({ route, navigation }) => {
         <View style={styles.jobCards}>
           <JobCard jobTitle="Software Engineer" company="Facebook" salary="$180,00" location="Accra, Ghana" />
           <JobCard jobTitle="Software Engineer" company="Google" salary="$160,00" location="Accra, Ghana" />
-          <JobCard jobTitle="Software Engineer" company="Amazon" salary="$180,00" location="Accra, Ghana" />
-          <JobCard jobTitle="Software Engineer" company="Microsoft" salary="$160,00" location="Accra, Ghana" />
-          {/* Add more featured job cards here */}
+         
+          
         </View>
         <View style={styles.sectionHeader}>
           <Text style={styles.sectionTitle}>Popular Jobs</Text>
@@ -69,9 +68,6 @@ const HomeScreen = ({ route, navigation }) => {
           <JobCard jobTitle="Jr Executive" company="Burger King" salary="$96,000/y" location="Los Angels, US" />
           <JobCard jobTitle="Product Manager" company="Beats" salary="$84,000/y" location="Florida, US" />
           <JobCard jobTitle="Product Manager" company="Facebook" salary="$86,000/y" location="Florida, US" />
-          <JobCard jobTitle="Software Engineer" company="Amazon" salary="$180,00" location="Accra, Ghana" />
-          <JobCard jobTitle="Software Engineer" company="Microsoft" salary="$160,00" location="Accra, Ghana" />
-          {/* Add more popular job cards here */}
         </View>
       </ScrollView>
     </View>
@@ -219,7 +215,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   jobCards: {
-    flexDirection: 'column',
+    flexDirection: 'row',
     gap: 10,
   },
   jobCard: {
@@ -319,16 +315,16 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   socialButton: {
-    width: 40,
-    height: 40,
+    width: 56,
+    height: 56,
     borderRadius: 20,
     backgroundColor: '#eee',
     alignItems: 'center',
     justifyContent: 'center',
   },
   socialLogo: {
-    width: 20,
-    height: 20,
+    width: 56,
+    height: 56,
   },
   registerContainer: {
     flexDirection: 'row',
