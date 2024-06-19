@@ -25,7 +25,7 @@ const JobCard = ({ jobTitle, company, salary, location }) => {
   );
 };
 
-const HomeScreen = ({ route }) => {
+const HomeScreen = ({ route, navigation }) => {
   const { name, email } = route.params;
   return (
     <View style={styles.container}>
@@ -78,7 +78,7 @@ const HomeScreen = ({ route }) => {
   );
 };
 
-const LoginScreen = () => {
+const LoginScreen = ({ navigation }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
