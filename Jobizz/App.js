@@ -30,13 +30,14 @@ const HomeScreen = ({ route, navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerText}>Homepage</Text>
+        <Text style={styles.headerText}>{email}</Text>
         <View style={styles.profile}>
+          <Text style={styles.profileName}>{name}</Text>
           <Image
             source={require('./assets/profile_pic.png')}
             style={styles.profileImage}
           />
-          <Text style={styles.profileName}>{name}</Text>
+          
         </View>
       </View>
       <View style={styles.search}>
@@ -64,7 +65,7 @@ const HomeScreen = ({ route, navigation }) => {
             <Text style={styles.seeAllButtonText}>See all</Text>
           </TouchableOpacity>
         </View>
-        <View style={styles.jobCards}>
+        <View style={styles.jobCard}>
           <JobCard jobTitle="Jr Executive" company="Burger King" salary="$96,000/y" location="Los Angels, US" />
           <JobCard jobTitle="Product Manager" company="Beats" salary="$84,000/y" location="Florida, US" />
           <JobCard jobTitle="Product Manager" company="Facebook" salary="$86,000/y" location="Florida, US" />
@@ -219,7 +220,7 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   jobCard: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     alignItems: 'center',
     padding: 15,
     backgroundColor: '#fff',
@@ -266,9 +267,14 @@ const styles = StyleSheet.create({
     color: '#777',
   },
   title: {
-    fontSize: 32,
-    fontWeight: 'bold',
+    fontSize: 22,
+    fontWeight:600,
     marginBottom: 20,
+    color:'rgba(53,104,153,1)',
+    width:150,
+    height:33,
+  
+    
   },
   welcomeText: {
     fontSize: 24,
